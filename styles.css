@@ -1,0 +1,247 @@
+/* Basic Styling */
+body {
+    background-color: black;
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-attachment: fixed; /* Makes the background stay fixed while scrolling */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color:#757575;
+    color: white;
+    padding: 4px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    color:whitesmoke;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.category {
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/024/669/489/small_2x/mountain-countryside-landscape-at-sunset-dramatic-sky-over-a-distant-valley-green-fields-and-trees-on-hill-beautiful-natural-landscapes-of-the-carpathians-generative-ai-variation-5-photo.jpeg');
+    position: relative;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+.category1 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkPO_-h5l4gDKk_ct5f4-Ej8x61rNsf-bClw&s');
+    position: relative;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+.category2 {
+    background-image: url('https://wallup.net/wp-content/uploads/2018/10/07/996419-cats-black-background-kittens-glance-whiskers-animals-wallpapers-300x200.jpg');
+    position: relative;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+.category3 {
+    background-image: url('https://4kwallpapers.com/images/walls/thumbs/12523.jpg');
+    position: relative;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+.category4 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQEaP6p6v4OieSfyAFRavvHnB87X6DJ7wMuw&s');
+    position: relative;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+.category5 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNQhuvvZCuPvPmHozpRMrwQshP-jx5jcuPCzWI0KBNSZn5sbROn_egAHz6MeeC7D6ASbU&usqp=CAU');
+    position: relative;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+.category6 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIc5J2iZWyl4V5ip7CwPwVo4HWXy-Ea37PQg&s');
+    position: relative;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+.category7 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_mvOA-TSaWB7-BGuHROTC-qDpYAXHYvts6Q&s');
+    position: relative;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+.category8 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS11xt4WTI9Dn4oUnsqB3iKY1YcF7xQ1YT0ow&s');
+    position: relative;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+.category9 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7NRHrTvAnJMkkPuU9TDzrZbbqAkS_VBsrmw&s');
+    position: relative;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+.category img {
+  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.category:hover img {
+    transform: scale(1.1);
+}
+
+/* Category name inside box */
+.category-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+/* Grid layout for wallpapers */
+.wallpaper-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 15px;
+}
+
+.wallpaper-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.wallpaper-grid img:hover {
+    transform: scale(1.05);
+}
+/* Flexbox container for Contact Info and Follow Us */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between the two sections */
+    margin-bottom: 30px;
+}
+
+.contact-info, .follow-us {
+    flex: 1;
+    padding: 20px;
+    background-color: #000000; /* Optional: Add background color */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.712); /* Optional: Add shadow */
+}
+
+/* Styling for the social media links */
+.social-media {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media li {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* General form styling */
+.contact-form {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.712);
+}
+
+.about-us, .mission, .categories, .community, .download-experience, .vision, .commitment {
+    background-color: #000000;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
